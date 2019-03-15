@@ -1,0 +1,181 @@
+.back-button {
+	svg {
+		width: 14px;
+		height: 14px;
+	}
+/*
+	&:before {
+		content: " ";
+		display: block;
+		width: 20px;
+		height: 20px;
+	}
+*/
+	&__dark {
+		svg {
+			fill: $color-black;
+		}
+		&:before {
+			
+		}		
+	}
+	&__light {
+		svg {
+			fill: white;
+		}
+		&:before {
+			
+		}
+	}
+
+}
+
+$button-border-radius: 5px;
+$button-padding: 13px 25px;
+$primary-color: royalblue;
+
+.button {
+	display: inline-block;
+	padding: $button-padding;
+	border-radius: $button-border-radius;
+// 	background:  linear-gradient(to left, #f64c7a, #f6b257);
+	background: $primary-color;
+	color: white;
+	text-decoration: none;
+}
+
+.close-button {
+	svg {
+		width: 10px !important;
+		height: 10px !important;
+	}
+}
+
+.screen{
+    -webkit-transition: 0.3s;
+    transition: 0.3s;	
+	background: $bg-color;
+	
+	&-header {
+		text-align: center;
+		color: white;
+		width: 100%;
+// 		border-top:3px solid $red;
+/*
+		background: white;
+		box-shadow: $list-item-box-shadow;
+*/
+		&[data-color="red"] { 
+			background:  linear-gradient(to bottom, $red, $light-red);
+		}
+		&[data-color="blue"] { 
+			background:  linear-gradient(to bottom, $blue, $light-blue);
+		}
+		&[data-color="green"] { 
+			background:  linear-gradient(to bottom, $green, $light-green);
+		}
+		&[data-color="yellow"] { 
+			background:  linear-gradient(to bottom, $yellow, $light-yellow);
+		}						
+		
+			svg {
+				width: 13px;
+				height: 13px;
+				fill: white;
+				cursor: pointer;
+			}
+			
+			&__navigation {
+				width: 100%;
+				line-height: 3rem;
+			    display: flex;
+			    justify-content: space-between;			
+			}
+			&__title {
+				font-size: 1.1rem;
+			}			
+	}
+	
+	&-body {
+// 		padding: 15px;
+	}
+	
+	&[data-color="red"] {
+		.screen-header {
+			background:  linear-gradient(to bottom, $red, $light-red);
+		}
+		.check-label{
+			background: $red;				
+		}
+		.footer-button {
+			svg {
+				fill: $red;
+			}
+		}
+	}
+	&[data-color="blue"] {
+		.screen-header {
+			background:  linear-gradient(to bottom, $blue, $light-blue);
+		}		
+		.check-label{
+			background: $blue;				
+		}
+		.footer-button {
+			svg {
+				fill: $blue;
+			}
+		}		
+	}
+	&[data-color="green"] {
+		.screen-header {
+			background:  linear-gradient(to bottom, $green, $light-green);
+		}		
+		.check-label{
+			background: $green;				
+		}
+		.footer-button {
+			svg {
+				fill: $green;
+			}
+		}		
+	}
+	&[data-color="yellow"] {
+		.screen-header {
+			background:  linear-gradient(to bottom, $yellow, $light-yellow);
+		}		
+		.check-label{
+			background: $yellow;				
+		}
+		.footer-button {
+			svg {
+				fill: $yellow;
+			}
+		}		
+	}
+	
+	.footer-button {
+		svg {
+			width: 11px;
+			height: 11px;
+			margin-right: 5px;
+		}
+		
+		&.disabled {
+			a {
+				color: $disabled-color;
+			}
+			svg {
+				fill: $disabled-color;
+			}
+		}
+	}		
+}
+
+.box {
+	background: white;
+	border-radius: $border-radius;
+	box-shadow: $list-item-box-shadow;
+	padding: 15px;
+}
+
+

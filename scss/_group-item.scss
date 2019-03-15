@@ -1,0 +1,121 @@
+.group-body {
+	padding-top: 15px;
+	margin-top: 150px;
+}
+
+.group-tab-content {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.group-person__item{
+	&__inner {
+		background: white;
+		margin: 5px 15px 0;
+		border-radius: $list-item-border-radius;
+		box-shadow: $list-item-box-shadow;	
+		padding: 10px 15px;	
+	}
+	
+	&__title {
+		font-size: 1.1rem;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;		
+		&__name {
+			display: inline-block;
+			font-weight: 500;
+			img {
+				max-width: 25px;
+				margin-right: 5px;
+			}
+			span {
+			}
+		}
+		&__price {
+			display: inline-block;
+			font-weight: 500;
+		}
+	}
+	
+	&__owes {
+		margin-top:10px;
+		padding-top:10px;
+		border-top:1px solid $border-color;
+		&__title {
+			text-transform: uppercase;
+			color: gray;
+			font-size: 0.5rem;
+		}
+		img, .group-list__item__participants__items__item {
+			max-width: 45px !important;
+		}
+		
+		.group-list__item__participants__items__item {
+			div {
+				font-size: 0.9rem;
+				font-weight: 500;
+			}
+		}
+	}
+	
+}
+
+.group-expenses{
+	padding-top: 10px;
+	&__item {
+		background: white;
+		margin: 5px 15px 0;
+		border-radius: $list-item-border-radius;
+		box-shadow: $list-item-box-shadow;	
+		padding: 10px 15px;	
+		
+		&__title {
+			font-size: 1rem;
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-between;	
+		    font-weight: 500;	
+	    }
+	    
+	    &__by {
+		    color: gray;
+		    font-size: 0.8rem;
+	    }
+	    
+	    &.inactive {
+		    display: none;
+	    }
+	}
+	
+	h4 {
+		text-transform: uppercase;
+		padding: 0 15px;
+		font-size: 0.7rem; 
+	}	
+	
+	&__filter {
+		margin-bottom: 15px;
+		&__items {
+			background: white;
+			margin: 5px 15px 0;
+			border-radius: $list-item-border-radius;
+			box-shadow: $list-item-box-shadow;	
+			padding: 10px 15px 0px 15px;	
+			
+			.group-list__item__participants__items__item {
+				border-bottom: 2px solid transparent;
+				cursor: pointer;
+				
+			}			
+		}
+		
+		.filter-all-placeholder {
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+		}
+	}
+}

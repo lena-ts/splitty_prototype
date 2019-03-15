@@ -1,0 +1,184 @@
+#group-item-overlay {
+	background: white;
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	box-shadow: $list-item-box-shadow;
+	background: $bg-color;
+	height: calc(100% - 108px);
+	overflow: scroll;
+	padding-bottom: 15px;
+}
+
+.group-item {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	left: 100%;
+	&.visible {
+		left:0; 
+	}
+	
+	.group-header {
+		text-align: center;
+		color: white;
+		position: fixed;
+		width: 100%;
+		
+		svg {
+			width: 13px;
+			height: 13px;
+			fill: white;
+		}
+		
+		&__navigation {
+			width: 100%;
+			line-height: 3rem;
+		    display: flex;
+		    justify-content: space-between;		
+		    padding: 0 15px;	
+			
+			.back-button {
+				float: left;
+			}
+		}
+		
+		&__title {
+			font-size: 1.1rem;
+		}
+		
+		&__total {
+			font-size: 2.5rem;
+			-webkit-transition: 0.3s;
+			transition: 0.3s;	
+			font-weight: 500;
+			line-height: 50px;	
+			padding-bottom: 10px;	
+		}
+		
+		&__tabs {
+			background: white;
+			border-bottom: 1px solid $border-color;
+			margin-top: 1rem;
+			-webkit-transition: 0.3s;
+			transition: 0.3s;	
+			margin-top:0;			
+			
+			&__tab {
+				display: inline-block;
+				text-align: center;
+				border-bottom: 2px solid transparent;
+				color: gray;
+				line-height: 3rem;
+				margin: 0 1rem;
+				cursor: pointer;
+				
+				&.active {
+					color: $color-black;
+				}
+			}
+		}
+	}
+	
+	.group-footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		border-top:1px solid $border-color;
+		background: white;
+		
+		&__title{
+			font-size: 0.7rem;
+			padding: 4px 15px;
+			border-bottom: 1px solid $border-color;
+		}
+		&__items {
+			padding: 0 15px;
+		}
+	}
+	
+	//red
+	&.red {
+		.group-header,
+		.filter-all-placeholder {
+			background: linear-gradient(to bottom, $red, $light-red);
+		}
+		
+		.group-header__tabs__tab {
+			&.active {
+				border-color: $red;
+			}
+		}
+		
+		.group-expenses__filter__items__item {
+			&.active {
+				border-color: $red;
+			}
+		}
+	}
+	//blue
+	&.blue {
+		.group-header,
+		.filter-all-placeholder {
+			background: linear-gradient(to bottom, $blue, $light-blue);
+		}
+		
+		.group-header__tabs__tab {
+			&.active {
+				border-color: $blue;
+			}
+		}
+		
+		.group-expenses__filter__items__item {
+			&.active {
+				border-color: $blue;
+			}
+		}
+	}
+	//yellow
+	&.yellow {
+		.group-header,
+		.filter-all-placeholder {
+			background: linear-gradient(to bottom, $yellow, $light-yellow);
+		}
+		
+		.group-header__tabs__tab {
+			&.active {
+				border-color: $yellow;
+			}
+		}
+		
+		.group-expenses__filter__items__item {
+			&.active {
+				border-color: $yellow;
+			}
+		}
+	}	
+	//green
+	&.green {
+		.group-header,
+		.filter-all-placeholder {
+			background: linear-gradient(to bottom, $green, $light-green);
+		}
+		
+		.group-header__tabs__tab {
+			&.active {
+				border-color: $green;
+			}
+		}
+		
+		.group-expenses__filter__items__item {
+			&.active {
+				border-color: $green;
+			}
+		}
+	}			
+	
+	&.scroll {
+		.group-header__total {			
+			height: 0;
+			display: none;
+		}
+	}	
+}

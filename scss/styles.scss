@@ -1,0 +1,138 @@
+//variables
+$bg-color: #fafafa;
+$color-black: #000;
+$border-color: #ebebeb;
+$border-radius: 6px;
+$list-item-border-radius: 6px;
+$list-item-box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+$disabled-color: #ccc;
+
+
+$color-opacity: 0.7; 
+$red: rgba(251, 72, 115, 1);
+$light-red: rgba(251, 72, 115, $color-opacity);
+$green: rgba(76, 186, 140, 1);
+$light-green: rgba(76, 186, 140, $color-opacity);
+$blue: rgba(72, 111, 251, 1);
+$light-blue: rgba(72, 111, 251, $color-opacity);
+$yellow: rgba(247, 206, 62, 1);
+$light-yellow: rgba(247, 206, 62, $color-opacity);
+
+
+@import '_nav-elements';
+@import '_group';
+@import '_group-item';
+@import '_group-add';
+@import '_group-expenses-add';
+
+body {
+	background: $bg-color;
+	padding-top:0;
+	padding-bottom: 60px;
+// 	font-family: "Poppins", sans-serif;
+}
+
+a {
+	color: $color-black;
+	&:hover {
+		color: $color-black;
+		text-decoration: none;
+	}
+}
+
+
+//Group List
+.group-list {
+	margin-top:1rem;
+	h4 {
+		margin-bottom: 1.2rem;
+		font-size: 1rem;
+	}
+	&__item {
+		position: relative;
+		background: white;
+		padding: 15px;
+		margin-bottom: 15px;
+		-webkit-border-radius: $list-item-border-radius;
+		border-radius: $list-item-border-radius;
+		box-shadow: $list-item-box-shadow;
+		&__indicator {
+			position: absolute;
+			top:0;
+			left: 10px;
+			display: block;
+			height: 3px;
+			max-width: 94%;							
+		}
+		&:nth-child(2){
+			.indicator {
+				background: #FB4873;
+			}
+		}
+		&:nth-child(3) {
+			.indicator {
+				background: #486FFB;
+			}
+		}	
+		&:nth-child(4) {
+			.indicator {
+				background: #F7CE3E;
+			}
+		}	
+		&:nth-child(5) {
+			.indicator {
+				background: #4CBA8C;
+			}
+		}		
+		
+		&__title {
+			font-size: 1.3rem;
+			&__name {
+				display: inline-block;
+				font-weight: 500;
+			}
+			&__price {
+				display: inline-block;
+				float: right;
+				font-weight: 500;
+			}
+		}
+		
+		&__participants {
+			margin-top: 0.5rem;
+			&__title {
+				color: gray;
+				font-size: 0.5rem;
+				text-transform: uppercase;
+			}
+			&__items {
+				margin-top:0.5rem;
+				&__item {
+					max-width: 50px;
+					text-align: center;
+					display: inline-block;
+					margin-right: 5px;
+					cursor: pointer;
+					img {
+						margin: auto;
+						max-width: 50px;
+					}
+					span {
+						font-size: 0.7rem;
+						color: gray;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-button {
+	display: block;
+	background-color: white !important;
+	border-top: 1px solid $border-color;
+	width: 100%;
+	line-height: 3.5rem;
+	font-weight: 500;
+	z-index: 1;
+}
