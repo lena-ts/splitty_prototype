@@ -7,9 +7,10 @@
 	z-index: 2;
 	box-shadow: $list-item-box-shadow;
 	background: $bg-color;
-	height: calc(100% - 108px);
+// 	height: calc(100% - 108px);
+// 	height: calc(100% - 98px);
 	overflow: scroll;
-	padding-bottom: 15px;
+	padding-bottom: 125px;
 }
 
 .group-item {
@@ -25,6 +26,7 @@
 		color: white;
 		position: fixed;
 		width: 100%;
+// 		background: white !important;
 		
 		svg {
 			width: 13px;
@@ -45,7 +47,8 @@
 		}
 		
 		&__title {
-			font-size: 1.1rem;
+			font-size: 1.2rem;
+			font-weight: 600;
 		}
 		
 		&__total {
@@ -60,19 +63,22 @@
 		&__tabs {
 			background: white;
 			border-bottom: 1px solid $border-color;
+			border-top: 1px solid $border-color;
 			margin-top: 1rem;
 			-webkit-transition: 0.3s;
 			transition: 0.3s;	
-			margin-top:0;			
+			margin-top:0;		
+			font-size: 1.1rem;	
 			
 			&__tab {
 				display: inline-block;
 				text-align: center;
-				border-bottom: 2px solid transparent;
+				border-bottom: 3px solid transparent;
 				color: gray;
 				line-height: 3rem;
 				margin: 0 1rem;
 				cursor: pointer;
+				font-weight: 600;
 				
 				&.active {
 					color: $color-black;
@@ -95,6 +101,18 @@
 		}
 		&__items {
 			padding: 0 15px;
+			.group-list__item__participants__items__item {
+				max-width: 50px;
+				img {
+					max-width: 50px;
+				}
+				span {
+// 					font-size: 0.7rem;
+				}
+				>div {
+					display: none;
+				}
+			}
 		}
 	}
 	

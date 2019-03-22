@@ -58,8 +58,9 @@ $primary-color: royalblue;
 	
 	&-header {
 		text-align: center;
-		color: white;
+		color: black;
 		width: 100%;
+		background: white !important;
 // 		border-top:3px solid $red;
 /*
 		background: white;
@@ -81,7 +82,7 @@ $primary-color: royalblue;
 			svg {
 				width: 13px;
 				height: 13px;
-				fill: white;
+				fill: black;
 				cursor: pointer;
 			}
 			
@@ -104,8 +105,8 @@ $primary-color: royalblue;
 		.screen-header {
 			background:  linear-gradient(to bottom, $red, $light-red);
 		}
-		.check-label{
-			background: $red;				
+		.check-label svg{
+			fill: $red;				
 		}
 		.footer-button {
 			svg {
@@ -117,8 +118,8 @@ $primary-color: royalblue;
 		.screen-header {
 			background:  linear-gradient(to bottom, $blue, $light-blue);
 		}		
-		.check-label{
-			background: $blue;				
+		.check-label svg{
+			fill: $blue;				
 		}
 		.footer-button {
 			svg {
@@ -130,8 +131,8 @@ $primary-color: royalblue;
 		.screen-header {
 			background:  linear-gradient(to bottom, $green, $light-green);
 		}		
-		.check-label{
-			background: $green;				
+		.check-label svg{
+			fill: $green;				
 		}
 		.footer-button {
 			svg {
@@ -143,8 +144,8 @@ $primary-color: royalblue;
 		.screen-header {
 			background:  linear-gradient(to bottom, $yellow, $light-yellow);
 		}		
-		.check-label{
-			background: $yellow;				
+		.check-label svg{
+			fill: $yellow;				
 		}
 		.footer-button {
 			svg {

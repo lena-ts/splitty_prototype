@@ -46,7 +46,7 @@ a {
 	margin-top:1rem;
 	h4 {
 		margin-bottom: 1.2rem;
-		font-size: 1rem;
+		font-size: 1.4rem;
 	}
 	&__item {
 		position: relative;
@@ -86,15 +86,15 @@ a {
 		}		
 		
 		&__title {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 			&__name {
 				display: inline-block;
-				font-weight: 500;
+				font-weight: 600;
 			}
 			&__price {
 				display: inline-block;
 				float: right;
-				font-weight: 500;
+				font-weight: 600;
 			}
 		}
 		
@@ -102,24 +102,28 @@ a {
 			margin-top: 0.5rem;
 			&__title {
 				color: gray;
-				font-size: 0.5rem;
+				font-size: 0.7rem;
 				text-transform: uppercase;
 			}
 			&__items {
 				margin-top:0.5rem;
 				&__item {
-					max-width: 50px;
+					max-width: 54px;
 					text-align: center;
 					display: inline-block;
 					margin-right: 5px;
 					cursor: pointer;
 					img {
 						margin: auto;
-						max-width: 50px;
+						width: 100%;
+// 						max-width: 60px;
 					}
 					span {
-						font-size: 0.7rem;
+						font-size: 0.8rem;
 						color: gray;
+					}
+					>div {
+						font-weight: 600;
 					}
 				}
 			}
@@ -133,6 +137,7 @@ a {
 	border-top: 1px solid $border-color;
 	width: 100%;
 	line-height: 3.5rem;
-	font-weight: 500;
+	font-weight: 600;
+	font-size: 1.2rem;
 	z-index: 1;
 }

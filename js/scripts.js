@@ -11,6 +11,7 @@ $(document).ready(function(){
 	closeButton();
 	addGroup__changeColor();
 	addGroup__uncheck();
+	addGroup__values();
 	addGroup__finish();
 	addExpense__values();
 	addExpense__finish(); 
@@ -169,11 +170,7 @@ $(document).ready(function(){
 				colorProp('yellow');
 			}			
 			
-		});
-		
-			if  ($('.group-name input').val()) {
-				$('.js-create-group-action').removeClass('disabled');
-			}		
+		});	
 	}
 	
 	function addGroup__uncheck() {
@@ -182,11 +179,23 @@ $(document).ready(function(){
 		});
 	}
 	
+	function addGroup__values() {
+		$('.group-add .group-name input').keydown(function(){
+			if ($(this).val()) {
+				$('.js-create-group-action').removeClass('disabled');
+			}
+		});
+	}		
+	
 	function addGroup__finish() {
 		$('.js-create-group-action').click(function(){
 			$('#group-add').removeClass('visible');
+			
+			$('.group-add .group-name input').removeAttr('value');
+			$('.group-add .group-name input').val('');			
 		});
 	}
+	
 	
 	function addExpense() {
 		$('.group-footer__items .group-list__item__participants__items__item').click(function(){

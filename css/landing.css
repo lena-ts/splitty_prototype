@@ -1,8 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("../img/landing-bg.png");
+  background-image: url("../img/landing-bg-2.jpg");
   background-repeat: no-repeat;
-  background-position: top right; }
+  background-position: top right;
+  background-size: 100%; }
 
 .button {
   display: inline-block;
@@ -62,6 +63,7 @@ body {
   align-items: center;
   width: 90%;
   margin: auto;
+  padding-top: 100px;
   /*
 	&__button {
 		&-buy {
@@ -74,7 +76,7 @@ body {
     width: 50%;
     margin: auto;
     display: block;
-    margin: 260px auto 120px;
+    margin: 360px auto 120px;
     text-align: left; }
     .app-hero__text h1, .app-hero__text h2 {
       font-weight: 300; }

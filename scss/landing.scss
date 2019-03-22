@@ -4,9 +4,10 @@ $border-color: #ebebeb;
 $primary-color: royalblue;
 body {
 	font-family: "Poppins", sans-serif;
-	background-image: url('../img/landing-bg.png');
+	background-image: url('../img/landing-bg-2.jpg');
 	background-repeat: no-repeat;
 	background-position: top right;
+	background-size: 100%;
 }
 
 .button {
@@ -73,11 +74,12 @@ body {
 	align-items: center;
 	width: 90%;
 	margin: auto;
+	padding-top: 100px;
 	&__text {
 		width:50%;
 		margin: auto;
 		display: block;
-		margin: 260px auto 120px;
+		margin: 360px auto 120px;
 		text-align: left;
 		h1, h2 {
 			font-weight: 300;
