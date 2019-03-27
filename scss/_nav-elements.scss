@@ -60,7 +60,8 @@ $primary-color: royalblue;
 		text-align: center;
 		color: black;
 		width: 100%;
-		background: white !important;
+		color: white;
+// 		background: white !important;
 // 		border-top:3px solid $red;
 /*
 		background: white;
@@ -82,7 +83,7 @@ $primary-color: royalblue;
 			svg {
 				width: 13px;
 				height: 13px;
-				fill: black;
+				fill: white;
 				cursor: pointer;
 			}
 			

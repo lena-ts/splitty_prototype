@@ -35,7 +35,7 @@
     text-align: center;
     color: black;
     width: 100%;
-    background: white !important;
+    color: white;
     /*
 		background: white;
 		box-shadow: $list-item-box-shadow;
@@ -51,7 +51,7 @@
     .screen-header svg {
       width: 13px;
       height: 13px;
-      fill: black;
+      fill: white;
       cursor: pointer; }
     .screen-header__navigation {
       width: 100%;
@@ -499,15 +499,16 @@
     .group-expenses-add .user-name > div {
       display: none; }
   .group-expenses-add__description {
-    width: 100%;
     background: white;
-    border-bottom: 1px solid #ebebeb;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem; }
     .group-expenses-add__description div {
       line-height: 60px;
       border-bottom: 1px solid #ebebeb; }
       .group-expenses-add__description div input {
-        width: 100%;
         margin: 0 15px;
         outline: none !important;
         font-weight: 500;
@@ -518,11 +519,42 @@
       .group-expenses-add__description div:last-child {
         border-bottom: 0; }
       .group-expenses-add__description div span {
-        font-weight: 500; }
+        font-weight: 500;
+        display: none; }
       .group-expenses-add__description div svg {
         width: 12px;
         height: 12px;
         margin-left: 5px; }
+  .group-expenses-add .edit-sums {
+    padding: 10px 0 0px 0;
+    margin-top: 10px;
+    border-top: 1px solid #ebebeb;
+    font-weight: 500;
+    text-align: center; }
+    .group-expenses-add .edit-sums svg {
+      width: 13px;
+      margin-right: 5px; }
+  .group-expenses-add .edit-block {
+    margin-top: 20px; }
+    .group-expenses-add .edit-block__user {
+      border-bottom: 1px solid #ebebeb;
+      padding: 10px 0; }
+      .group-expenses-add .edit-block__user-name {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 500; }
+        .group-expenses-add .edit-block__user-name img {
+          max-width: 30px;
+          margin-right: 5px; }
+      .group-expenses-add .edit-block__user-amount {
+        display: inline-block;
+        float: right; }
+        .group-expenses-add .edit-block__user-amount input {
+          text-align: right;
+          font-weight: 500;
+          font-size: 20px; }
+      .group-expenses-add .edit-block__user:last-child {
+        border-bottom: 0; }
   .group-expenses-add .footer-button {
     position: absolute;
     bottom: 0; }
