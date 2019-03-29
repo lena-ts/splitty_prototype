@@ -121,7 +121,9 @@
     text-align: center;
     color: white;
     position: fixed;
-    width: 100%; }
+    width: 100%;
+    background: url("../img/group-bg.png") !important;
+    background-size: 100% !important; }
     .group-item .group-header svg {
       width: 13px;
       height: 13px;
