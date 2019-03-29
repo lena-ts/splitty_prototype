@@ -272,18 +272,18 @@
     .group-expenses__item__title {
       font-size: 1.2rem;
       font-size: 1rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       display: flex;
       align-items: center;
       justify-content: space-between; }
     .group-expenses__item__price {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 600; }
     .group-expenses__item__by {
       color: gray;
       color: black;
       font-size: 0.8rem;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 600; }
     .group-expenses__item.inactive {
       display: none; }
