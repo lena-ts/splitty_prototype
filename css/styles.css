@@ -122,7 +122,7 @@
     color: white;
     position: fixed;
     width: 100%;
-    background: url("../img/group-bg.png") !important;
+    background: url("../img/group-bg-4.png") !important;
     background-size: 100% !important; }
     .group-item .group-header svg {
       width: 13px;
@@ -272,13 +272,16 @@
     .group-expenses__item__title {
       font-size: 1.2rem;
       font-size: 1rem;
+      font-size: 0.8rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      font-weight: 600; }
+      justify-content: space-between; }
     .group-expenses__item__by {
       color: gray;
-      font-size: 0.8rem; }
+      color: black;
+      font-size: 0.8rem;
+      font-size: 1rem;
+      font-weight: 600; }
     .group-expenses__item.inactive {
       display: none; }
   .group-expenses h4 {
