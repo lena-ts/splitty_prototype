@@ -276,6 +276,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between; }
+    .group-expenses__item__price {
+      font-size: 1rem;
+      font-weight: 600; }
     .group-expenses__item__by {
       color: gray;
       color: black;
