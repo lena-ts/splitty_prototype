@@ -122,7 +122,6 @@
     color: white;
     position: fixed;
     width: 100%;
-    background: url("../img/group-bg-4.png") !important;
     background-size: 100% !important; }
     .group-item .group-header svg {
       width: 13px;
