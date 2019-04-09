@@ -209,6 +209,9 @@
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
+	.group-person__item__owes__title {
+		padding-bottom: 4px;
+	}
 	.group-list__item__participants__items {
 		
 		&.test-item-1 {
@@ -226,7 +229,7 @@
 		margin-bottom: 5px;
 		
 		img {
-			max-width: 35px;
+			max-width: 30px;
 		}
 		span {
 			font-size: 1rem;
@@ -236,7 +239,7 @@
 			display: inline-block;
 			float: right;
 			font-size: 1rem !important;
-			padding-top: 5px;
+			padding-top: 4px;
 		}
 	}
 }

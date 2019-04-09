@@ -220,6 +220,8 @@
   width: 49%;
   display: inline-block;
   vertical-align: top; }
+  .test-item .group-person__item__owes__title {
+    padding-bottom: 4px; }
   .test-item .group-list__item__participants__items.test-item-1 {
     border-right: 1px solid #ebebeb;
     padding-right: 10px; }
@@ -231,7 +233,7 @@
     text-align: left;
     margin-bottom: 5px; }
     .test-item .group-list__item__participants__items__item img {
-      max-width: 35px; }
+      max-width: 30px; }
     .test-item .group-list__item__participants__items__item span {
       font-size: 1rem;
       padding-left: 5px; }
@@ -239,7 +241,7 @@
       display: inline-block;
       float: right;
       font-size: 1rem !important;
-      padding-top: 5px; }
+      padding-top: 4px; }
 
 .group-body {
   padding-top: 15px;
@@ -268,7 +270,7 @@
     font-weight: 600;
     font-size: 1.3rem; }
     .group-person__item__title__name img {
-      max-width: 30px;
+      max-width: 35px;
       margin-right: 5px; }
   .group-person__item__title__price {
     display: inline-block;
