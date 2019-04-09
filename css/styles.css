@@ -216,6 +216,27 @@
     height: 0;
     display: none; }
 
+.test-item {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top; }
+  .test-item .group-list__item__participants__items.test-item-1 {
+    border-right: 1px solid #ebebeb;
+    padding-right: 10px; }
+  .test-item .group-list__item__participants__items.test-item-2 {
+    padding-left: 10px; }
+  .test-item .group-list__item__participants__items__item {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px; }
+    .test-item .group-list__item__participants__items__item img {
+      max-width: 25px; }
+    .test-item .group-list__item__participants__items__item div {
+      display: inline-block;
+      float: right;
+      font-size: 1rem !important; }
+
 .group-body {
   padding-top: 15px;
   margin-top: 150px;
