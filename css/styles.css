@@ -122,21 +122,17 @@
     color: white;
     position: fixed;
     width: 100%;
-    background: white !important;
     background-size: 100% !important; }
     .group-item .group-header svg {
       width: 13px;
       height: 13px;
-      fill: white;
-      fill: black; }
+      fill: white; }
     .group-item .group-header__navigation {
       width: 100%;
       line-height: 3rem;
       display: flex;
       justify-content: space-between;
-      padding: 0 15px;
-      background: white !important;
-      color: black; }
+      padding: 0 15px; }
       .group-item .group-header__navigation .back-button {
         float: left; }
     .group-item .group-header__title {
