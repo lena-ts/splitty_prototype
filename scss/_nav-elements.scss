@@ -68,16 +68,24 @@ $primary-color: royalblue;
 		box-shadow: $list-item-box-shadow;
 */
 		&[data-color="red"] { 
+			.screen-header__navigation {
 			background:  linear-gradient(to bottom, $red, $light-red);
+			}
 		}
 		&[data-color="blue"] { 
+			.screen-header__navigation{
 			background:  linear-gradient(to bottom, $blue, $light-blue);
+			}
 		}
 		&[data-color="green"] { 
+			.screen-header__navigation {
 			background:  linear-gradient(to bottom, $green, $light-green);
+			}
 		}
 		&[data-color="yellow"] { 
+			.screen-header__navigation {
 			background:  linear-gradient(to bottom, $yellow, $light-yellow);
+			}
 		}						
 		
 			svg {
@@ -103,7 +111,7 @@ $primary-color: royalblue;
 	}
 	
 	&[data-color="red"] {
-		.screen-header {
+		.screen-header__navigation {
 			background:  linear-gradient(to bottom, $red, $light-red);
 		}
 		.check-label svg{
@@ -116,7 +124,7 @@ $primary-color: royalblue;
 		}
 	}
 	&[data-color="blue"] {
-		.screen-header {
+		.screen-header__navigation {
 			background:  linear-gradient(to bottom, $blue, $light-blue);
 		}		
 		.check-label svg{
@@ -129,7 +137,7 @@ $primary-color: royalblue;
 		}		
 	}
 	&[data-color="green"] {
-		.screen-header {
+		.screen-header__navigation {
 			background:  linear-gradient(to bottom, $green, $light-green);
 		}		
 		.check-label svg{
@@ -142,7 +150,7 @@ $primary-color: royalblue;
 		}		
 	}
 	&[data-color="yellow"] {
-		.screen-header {
+		.screen-header__navigation {
 			background:  linear-gradient(to bottom, $yellow, $light-yellow);
 		}		
 		.check-label svg{

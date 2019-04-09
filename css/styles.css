@@ -40,13 +40,13 @@
 		background: white;
 		box-shadow: $list-item-box-shadow;
 */ }
-    .screen-header[data-color="red"] {
+    .screen-header[data-color="red"] .screen-header__navigation {
       background: linear-gradient(to bottom, #fb4873, rgba(251, 72, 115, 0.7)); }
-    .screen-header[data-color="blue"] {
+    .screen-header[data-color="blue"] .screen-header__navigation {
       background: linear-gradient(to bottom, #486ffb, rgba(72, 111, 251, 0.7)); }
-    .screen-header[data-color="green"] {
+    .screen-header[data-color="green"] .screen-header__navigation {
       background: linear-gradient(to bottom, #4cba8c, rgba(76, 186, 140, 0.7)); }
-    .screen-header[data-color="yellow"] {
+    .screen-header[data-color="yellow"] .screen-header__navigation {
       background: linear-gradient(to bottom, #f7ce3e, rgba(247, 206, 62, 0.7)); }
     .screen-header svg {
       width: 13px;
@@ -60,25 +60,25 @@
       justify-content: space-between; }
     .screen-header__title {
       font-size: 1.1rem; }
-  .screen[data-color="red"] .screen-header {
+  .screen[data-color="red"] .screen-header__navigation {
     background: linear-gradient(to bottom, #fb4873, rgba(251, 72, 115, 0.7)); }
   .screen[data-color="red"] .check-label svg {
     fill: #fb4873; }
   .screen[data-color="red"] .footer-button svg {
     fill: #fb4873; }
-  .screen[data-color="blue"] .screen-header {
+  .screen[data-color="blue"] .screen-header__navigation {
     background: linear-gradient(to bottom, #486ffb, rgba(72, 111, 251, 0.7)); }
   .screen[data-color="blue"] .check-label svg {
     fill: #486ffb; }
   .screen[data-color="blue"] .footer-button svg {
     fill: #486ffb; }
-  .screen[data-color="green"] .screen-header {
+  .screen[data-color="green"] .screen-header__navigation {
     background: linear-gradient(to bottom, #4cba8c, rgba(76, 186, 140, 0.7)); }
   .screen[data-color="green"] .check-label svg {
     fill: #4cba8c; }
   .screen[data-color="green"] .footer-button svg {
     fill: #4cba8c; }
-  .screen[data-color="yellow"] .screen-header {
+  .screen[data-color="yellow"] .screen-header__navigation {
     background: linear-gradient(to bottom, #f7ce3e, rgba(247, 206, 62, 0.7)); }
   .screen[data-color="yellow"] .check-label svg {
     fill: #f7ce3e; }
@@ -321,13 +321,13 @@
   transition: 0.4s; }
   .group-add.visible {
     bottom: 0; }
-  .group-add .screen-header__title {
-    display: none; }
   .group-add .group-name {
-    padding-bottom: 20px;
-    font-size: 1.6rem;
+    padding-bottom: 0px;
+    font-size: 1rem;
+    line-height: 3rem;
     font-weight: 600;
-    text-align: left; }
+    text-align: left;
+    background: white; }
     .group-add .group-name input {
       text-align: left;
       padding-left: 15px;
@@ -358,7 +358,12 @@
       list-style: none;
       padding: 0;
       min-height: 50px;
-      margin-top: 15px; }
+      margin-top: 15px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px; }
       .group-add__color-list li {
         display: inline-block;
         background: gray;
@@ -380,8 +385,8 @@
         .group-add__color-list li.yellow {
           background: linear-gradient(to bottom, #f7ce3e, rgba(247, 206, 62, 0.7)); }
         .group-add__color-list li.active {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           margin: 0 10px 0 0;
           position: relative; }
           .group-add__color-list li.active:after {
@@ -389,8 +394,8 @@
             position: absolute;
             top: -5px;
             left: -5px;
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             background: transparent;
             border: 1px solid #585757;
             border-radius: 100%; }
@@ -430,8 +435,8 @@
       transition: 0.3s;
       cursor: pointer; }
       .group-add__participants .group-list__item__participants__items__item .check-label {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         border-radius: 100%;
         position: absolute;
         top: -4px;
@@ -439,22 +444,23 @@
         display: none;
         background: #5CAC4C; }
         .group-add__participants .group-list__item__participants__items__item .check-label svg {
-          width: 12px;
-          height: 12px;
-          margin-top: -8px; }
+          width: 7px;
+          height: 7px;
+          margin-top: -8px;
+          display: none; }
         .group-add__participants .group-list__item__participants__items__item .check-label:before {
           content: " ";
           display: block;
-          width: 12px;
-          height: 12px;
+          width: 8px;
+          height: 8px;
           background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2232.229px%22%20height%3D%2232.229px%22%20viewBox%3D%220%200%2032.229%2032.229%22%20style%3D%22enable-background%3Anew%200%200%2032.229%2032.229%3B%22%0D%0A%09%20xml%3Aspace%3D%22preserve%22%20fill%3D%22white%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20d%3D%22M31.496%2C9.374L14.477%2C26.391c-0.469%2C0.471-1.104%2C0.732-1.768%2C0.732c-0.664%2C0-1.299-0.263-1.768-0.732L0.733%2C16.183%0D%0A%09%09c-0.978-0.976-0.978-2.559%2C0-3.534c0.977-0.977%2C2.559-0.977%2C3.535%2C0l8.44%2C8.439l15.25-15.25c0.977-0.977%2C2.559-0.977%2C3.534%2C0%0D%0A%09%09C32.473%2C6.815%2C32.473%2C8.398%2C31.496%2C9.374z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A");
           background-repeat: no-repeat;
           background-size: cover;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin-top: -6px;
-          margin-left: -6px; }
+          margin-top: -4px;
+          margin-left: -4px; }
       .group-add__participants .group-list__item__participants__items__item.checked {
         opacity: 1; }
         .group-add__participants .group-list__item__participants__items__item.checked .check-label {
