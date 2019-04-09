@@ -72,8 +72,8 @@ $(document).ready(function(){
 			groupPrice = $(group).find($('.group-list__item__title__price')).text(),
 			groupParticipants = $(group).find($('.group-list__item__participants__items')).clone();
 			
-			$('.group-item').find($('.group-header__title')).text(groupName);
-			$('.group-item').find($('.group-header__total')).text(groupPrice);
+			$('.group-item').find($('.group-header__title')).text(groupName + ' ' + '-' + ' ' + groupPrice);
+// 			$('.group-item').find($('.group-header__total')).text(groupPrice);
 			$('.group-item').find($('.group-footer__items')).html(groupParticipants);
 			
 			addExpense();

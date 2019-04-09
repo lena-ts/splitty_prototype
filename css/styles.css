@@ -144,7 +144,8 @@
       transition: 0.3s;
       font-weight: 500;
       line-height: 50px;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      display: none; }
     .group-item .group-header__tabs {
       background: white;
       border-bottom: 1px solid #ebebeb;
@@ -217,7 +218,8 @@
 
 .group-body {
   padding-top: 15px;
-  margin-top: 150px; }
+  margin-top: 150px;
+  margin-top: 95px; }
 
 .group-tab-content {
   display: none; }
