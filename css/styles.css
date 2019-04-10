@@ -602,7 +602,8 @@
     position: relative;
     background: white;
     line-height: 3.8rem;
-    height: 62px; }
+    height: 62px;
+    border-bottom: 1px solid #ebebeb; }
     .test-add-group .footer-button a {
       color: black;
       display: inline-block;
@@ -611,13 +612,13 @@
       .test-add-group .footer-button a.left {
         float: left;
         border-right: 1px solid #ebebeb; }
-        .test-add-group .footer-button a.left svg {
-          fill: black;
-          width: 13px;
-          height: 13px;
-          margin-left: 5px; }
       .test-add-group .footer-button a.right {
         float: right; }
+      .test-add-group .footer-button a > svg {
+        fill: black !important;
+        width: 13px;
+        height: 13px;
+        margin-left: 5px; }
     .test-add-group .footer-button svg {
       width: 20px;
       height: 20px;
@@ -628,7 +629,7 @@
       box-shadow: 0 0 0 transparent !important;
       padding: 0; }
     .test-add-group .participants .group-add__participants {
-      padding: 145px 20px; }
+      padding: 125px 20px; }
 
 .group-expenses-add {
   position: fixed;

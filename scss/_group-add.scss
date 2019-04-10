@@ -369,6 +369,7 @@
 			background: white;
 			line-height: 3.8rem;
 			height: 62px;
+			border-bottom: 1px solid #ebebeb;
 			a {
 				color: black;
 				display: inline-block;
@@ -377,16 +378,16 @@
 				&.left {
 					float: left;
 					border-right: 1px solid #ebebeb;
-					svg {
-						fill: black;
-						width: 13px;
-						height: 13px;
-						margin-left: 5px;
-					}
 				}
 				&.right {
 					float: right;
 				}
+					>svg {
+						fill: black !important;
+						width: 13px;
+						height: 13px;
+						margin-left: 5px;
+					}				
 			}
 			svg {
 				width: 20px;
@@ -404,7 +405,7 @@
 			}
 			
 			.group-add__participants {
-				padding: 145px 20px;
+				padding: 125px 20px;
 			}
 		}		
 }
