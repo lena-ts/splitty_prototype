@@ -291,7 +291,7 @@
 			background: transparent;
 			font-size: 1.8rem;
 			text-align: center;
-			margin-top:150px;
+			margin-top:180px;
 			input {
 				background: transparent;
 				text-align: center;
@@ -305,9 +305,9 @@
 		}
 		
 		.group-add__color {
-			background: transparent;
+			background: white;
 			position: absolute;
-			bottom: 70px;
+			bottom: 50px;
 			width: 100%;
 			text-align: center;
 			&-list {
@@ -320,7 +320,7 @@
 					width: 40px;
 					height: 40px;
 					&:after {
-						border-color: white;
+// 						border-color: white;
 					}
 					&.active {
 						width: 45px;

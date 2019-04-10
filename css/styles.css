@@ -548,7 +548,7 @@
     background: transparent;
     font-size: 1.8rem;
     text-align: center;
-    margin-top: 150px; }
+    margin-top: 180px; }
     .test-add-group .group-name input {
       background: transparent;
       text-align: center;
@@ -558,9 +558,9 @@
       .test-add-group .group-name input::placeholder {
         color: white; }
   .test-add-group .group-add__color {
-    background: transparent;
+    background: white;
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
     width: 100%;
     text-align: center; }
     .test-add-group .group-add__color-list {
@@ -571,8 +571,6 @@
       .test-add-group .group-add__color-list li {
         width: 40px;
         height: 40px; }
-        .test-add-group .group-add__color-list li:after {
-          border-color: white; }
         .test-add-group .group-add__color-list li.active {
           width: 45px;
           height: 45px; }
