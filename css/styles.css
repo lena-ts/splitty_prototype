@@ -562,7 +562,8 @@
     position: absolute;
     bottom: 50px;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 15px; }
     .test-add-group .group-add__color-list {
       padding: 0;
       -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1) !important;
