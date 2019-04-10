@@ -548,7 +548,7 @@
     background: transparent;
     font-size: 1.8rem;
     text-align: center;
-    margin-top: 200px; }
+    margin-top: 150px; }
     .test-add-group .group-name input {
       background: transparent;
       text-align: center;
@@ -560,7 +560,7 @@
   .test-add-group .group-add__color {
     background: transparent;
     position: absolute;
-    bottom: 60px;
+    bottom: 70px;
     width: 100%;
     text-align: center; }
     .test-add-group .group-add__color-list {
@@ -568,8 +568,11 @@
       -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1) !important;
       box-shadow: 0 0 0 rgba(0, 0, 0, 0.1) !important;
       background: transparent; }
-      .test-add-group .group-add__color-list li:after {
-        border-color: white; }
+      .test-add-group .group-add__color-list li {
+        width: 40px;
+        height: 40px; }
+        .test-add-group .group-add__color-list li:after {
+          border-color: transparent; }
   .test-add-group .footer-button svg {
     width: 20px;
     height: 20px;
