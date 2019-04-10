@@ -607,7 +607,7 @@
     .test-add-group .footer-button a {
       color: black;
       display: inline-block;
-      width: 100%;
+      width: 49%;
       font-size: 1rem; }
       .test-add-group .footer-button a.left {
         float: left;
