@@ -406,12 +406,13 @@
 			}
 			
 			.group-add__participants {
-				padding: 20px 20px 200px;
+				padding: 30px 20px 350px;
 				overflow: hidden;
 				
 				h4 {
 					padding-bottom: 20px;
-					display: none;
+					text-align: center;
+// 					display: none;
 				}
 				
 				.group-add__contacts {
