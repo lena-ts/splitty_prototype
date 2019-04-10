@@ -572,7 +572,13 @@
         width: 40px;
         height: 40px; }
         .test-add-group .group-add__color-list li:after {
-          border-color: transparent; }
+          border-color: white; }
+        .test-add-group .group-add__color-list li.active {
+          width: 45px;
+          height: 45px; }
+          .test-add-group .group-add__color-list li.active:after {
+            width: 55px;
+            height: 55px; }
   .test-add-group .footer-button svg {
     width: 20px;
     height: 20px;

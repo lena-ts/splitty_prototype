@@ -320,7 +320,15 @@
 					width: 40px;
 					height: 40px;
 					&:after {
-						border-color: transparent;
+						border-color: white;
+					}
+					&.active {
+						width: 45px;
+						height: 45px;
+						&:after {
+							width: 55px;
+							height: 55px;
+						}
 					}
 				}
 			}
