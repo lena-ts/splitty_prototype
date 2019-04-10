@@ -15,6 +15,7 @@ $(document).ready(function(){
 	addGroup__finish();
 	addExpense__values();
 	addExpense__finish(); 
+	addParticipants();
 	
 	function indicatorWidth(){	
 		var arr = [],
@@ -229,5 +230,11 @@ $(document).ready(function(){
 				$('.js-create-expense-action').removeClass('disabled');
 			}			
 		}); 	
+	}
+	
+	function addParticipants() {
+		$('js-add-participants').click(function(){
+			
+		});
 	}
 });
