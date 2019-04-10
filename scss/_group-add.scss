@@ -307,7 +307,7 @@
 		.group-add__color {
 			background: white;
 			position: absolute;
-			bottom: 50px;
+			bottom: 55px;
 			width: 100%;
 			text-align: center;
 			&-list {
@@ -354,10 +354,15 @@
 		}
 		
 		.footer-button {
+			line-height: 3.8rem;
 			a {
 				color: black;
+				display: inline-block;
+				width: 49%;
+				font-size: 1rem;
 				&.left {
 					float: left;
+					border-right: 1px solid #ebebeb;
 				}
 				&.right {
 					float: right;

@@ -560,7 +560,7 @@
   .test-add-group .group-add__color {
     background: white;
     position: absolute;
-    bottom: 50px;
+    bottom: 55px;
     width: 100%;
     text-align: center; }
     .test-add-group .group-add__color-list {
@@ -590,16 +590,22 @@
         margin-left: 5px; }
     .test-add-group .currency .currency__title {
       display: none; }
-  .test-add-group .footer-button a {
-    color: black; }
-    .test-add-group .footer-button a.left {
-      float: left; }
-    .test-add-group .footer-button a.right {
-      float: right; }
-  .test-add-group .footer-button svg {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px; }
+  .test-add-group .footer-button {
+    line-height: 3.8rem; }
+    .test-add-group .footer-button a {
+      color: black;
+      display: inline-block;
+      width: 49%;
+      font-size: 1rem; }
+      .test-add-group .footer-button a.left {
+        float: left;
+        border-right: 1px solid #ebebeb; }
+      .test-add-group .footer-button a.right {
+        float: right; }
+    .test-add-group .footer-button svg {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px; }
 
 .group-expenses-add {
   position: fixed;
