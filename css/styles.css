@@ -560,7 +560,7 @@
   .test-add-group .group-add__color {
     background: white;
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     width: 100%;
     text-align: center; }
     .test-add-group .group-add__color-list {
@@ -577,6 +577,20 @@
           .test-add-group .group-add__color-list li.active:after {
             width: 55px;
             height: 55px; }
+  .test-add-group .currency {
+    width: 100%;
+    position: absolute;
+    bottom: 55px;
+    display: block;
+    text-align: center; }
+    .test-add-group .currency > div {
+      display: inline-block; }
+      .test-add-group .currency > div svg {
+        margin-left: 5px; }
+    .test-add-group .currency .currency__title {
+      display: none; }
+  .test-add-group .footer-button a {
+    color: black; }
   .test-add-group .footer-button svg {
     width: 20px;
     height: 20px;

@@ -307,7 +307,7 @@
 		.group-add__color {
 			background: white;
 			position: absolute;
-			bottom: 50px;
+			bottom: 100px;
 			width: 100%;
 			text-align: center;
 			&-list {
@@ -334,7 +334,28 @@
 			}
 		}
 		
+		.currency {
+			width: 100%;
+			position: absolute;
+			bottom: 55px;
+			display: block;
+			text-align: center;
+			>div {
+				display: inline-block;
+				svg {
+					margin-left: 5px;
+				}
+			}
+			
+			.currency__title {
+				display: none;
+			}
+		}
+		
 		.footer-button {
+			a {
+				color: black;
+			}
 			svg {
 				width: 20px;
 				height: 20px;
