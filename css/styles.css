@@ -629,7 +629,26 @@
       box-shadow: 0 0 0 transparent !important;
       padding: 0; }
     .test-add-group .participants .group-add__participants {
-      padding: 125px 20px; }
+      padding: 20px 20px 200px; }
+      .test-add-group .participants .group-add__participants h4 {
+        padding-bottom: 20px; }
+      .test-add-group .participants .group-add__participants .group-add__contacts {
+        border: 0; }
+      .test-add-group .participants .group-add__participants .group-list__item__participants__items__item {
+        position: relative; }
+        .test-add-group .participants .group-add__participants .group-list__item__participants__items__item .check-label {
+          width: 60px;
+          height: 60px;
+          border-radius: 100%;
+          background: transparent;
+          border: 1px solid green;
+          position: absolute;
+          top: -3px;
+          left: -3px; }
+          .test-add-group .participants .group-add__participants .group-list__item__participants__items__item .check-label svg {
+            display: none; }
+          .test-add-group .participants .group-add__participants .group-list__item__participants__items__item .check-label:before {
+            display: none; }
 
 .group-expenses-add {
   position: fixed;
