@@ -373,7 +373,7 @@
 			a {
 				color: black;
 				display: inline-block;
-				width: 100%;
+				width: 49%;
 				font-size: 1rem;
 				&.left {
 					float: left;
@@ -381,8 +381,7 @@
 				}
 				&.right {
 					float: right;
-					border-bottom: 1px solid #ebebeb;
-					display: none;
+// 					border-bottom: 1px solid #ebebeb;
 				}
 					>svg {
 						fill: black !important;

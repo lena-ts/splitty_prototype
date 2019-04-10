@@ -607,15 +607,13 @@
     .test-add-group .footer-button a {
       color: black;
       display: inline-block;
-      width: 100%;
+      width: 49%;
       font-size: 1rem; }
       .test-add-group .footer-button a.left {
         float: left;
         border-right: 1px solid #ebebeb; }
       .test-add-group .footer-button a.right {
-        float: right;
-        border-bottom: 1px solid #ebebeb;
-        display: none; }
+        float: right; }
       .test-add-group .footer-button a > svg {
         fill: black !important;
         width: 13px;
