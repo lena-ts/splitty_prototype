@@ -373,7 +373,7 @@
 			a {
 				color: black;
 				display: inline-block;
-				width: 49%;
+				width: 100%;
 				font-size: 1rem;
 				&.left {
 					float: left;
@@ -381,7 +381,8 @@
 				}
 				&.right {
 					float: right;
-					border-bottom: 2px solid $red;
+					border-bottom: 1px solid #ebebeb;
+					display: none;
 				}
 					>svg {
 						fill: black !important;
@@ -407,6 +408,7 @@
 			
 			.group-add__participants {
 				padding: 20px 20px 200px;
+				overflow: hidden;
 				
 				h4 {
 					padding-bottom: 20px;

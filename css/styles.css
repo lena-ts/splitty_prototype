@@ -607,14 +607,15 @@
     .test-add-group .footer-button a {
       color: black;
       display: inline-block;
-      width: 49%;
+      width: 100%;
       font-size: 1rem; }
       .test-add-group .footer-button a.left {
         float: left;
         border-right: 1px solid #ebebeb; }
       .test-add-group .footer-button a.right {
         float: right;
-        border-bottom: 2px solid #fb4873; }
+        border-bottom: 1px solid #ebebeb;
+        display: none; }
       .test-add-group .footer-button a > svg {
         fill: black !important;
         width: 13px;
@@ -630,7 +631,8 @@
       box-shadow: 0 0 0 transparent !important;
       padding: 0; }
     .test-add-group .participants .group-add__participants {
-      padding: 20px 20px 200px; }
+      padding: 20px 20px 200px;
+      overflow: hidden; }
       .test-add-group .participants .group-add__participants h4 {
         padding-bottom: 20px;
         display: none; }
