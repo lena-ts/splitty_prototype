@@ -289,9 +289,9 @@
 		
 		.group-name {
 			background: transparent;
-			font-size: 1.6rem;
+			font-size: 1.8rem;
 			text-align: center;
-			margin-top:250px;
+			margin-top:200px;
 			input {
 				background: transparent;
 				text-align: center;
@@ -305,14 +305,22 @@
 		}
 		
 		.group-add__color {
-			background: white;
+			background: transparent;
 			position: absolute;
-			bottom: 50px;
+			bottom: 60px;
 			width: 100%;
+			text-align: center;
 			&-list {
 				padding: 0;
 				-webkit-box-shadow:0 0 0 rgba(0, 0, 0, 0.1) !important;
 				box-shadow: 0 0 0 rgba(0, 0, 0, 0.1) !important;
+				background: transparent;
+				
+				li {
+					&:after {
+						border-color: white;
+					}
+				}
 			}
 		}
 		
