@@ -516,6 +516,61 @@
     .group-add .footer-button[data-color="yellow"] svg {
       fill: #f7ce3e; }
 
+.test-add-group {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #fafafa; }
+  .test-add-group .screen-header {
+    text-align: center;
+    color: black;
+    width: 100%;
+    color: white; }
+    .test-add-group .screen-header__navigation {
+      width: 100%;
+      line-height: 3rem;
+      display: flex;
+      justify-content: space-between; }
+    .test-add-group .screen-header__title {
+      font-size: 1.1rem; }
+  .test-add-group[data-color="red"] {
+    background: linear-gradient(to bottom, #fb4873, rgba(251, 72, 115, 0.7));
+    background: #fb4873; }
+  .test-add-group[data-color="blue"] {
+    background: linear-gradient(to bottom, #486ffb, rgba(72, 111, 251, 0.7));
+    background: #486ffb; }
+  .test-add-group[data-color="green"] {
+    background: linear-gradient(to bottom, #4cba8c, rgba(76, 186, 140, 0.7));
+    background: #4cba8c; }
+  .test-add-group[data-color="yellow"] {
+    background: linear-gradient(to bottom, #f7ce3e, rgba(247, 206, 62, 0.7));
+    background: #f7ce3e; }
+  .test-add-group .group-name {
+    background: transparent;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 250px; }
+    .test-add-group .group-name input {
+      background: transparent;
+      text-align: center;
+      padding: 0;
+      color: white;
+      font-weight: 600; }
+      .test-add-group .group-name input::placeholder {
+        color: white; }
+  .test-add-group .group-add__color {
+    background: white;
+    position: absolute;
+    bottom: 50px;
+    width: 100%; }
+    .test-add-group .group-add__color-list {
+      padding: 0;
+      -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1) !important;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.1) !important; }
+  .test-add-group .footer-button svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; }
+
 .group-expenses-add {
   position: fixed;
   left: 0;
