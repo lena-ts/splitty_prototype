@@ -233,8 +233,10 @@ $(document).ready(function(){
 	}
 	
 	function addParticipants() {
-		$('js-add-participants').click(function(){
-			
+		$('.js-add-participants').click(function(){
+		    $('#group-add').animate({
+		        scrollTop: $("#group-color").offset().top
+		    }, 1000);
 		});
 	}
 });
