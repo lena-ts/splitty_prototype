@@ -546,9 +546,9 @@
     background: #f7ce3e; }
   .test-add-group .group-name {
     background: transparent;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
-    margin-top: 180px; }
+    margin-top: 200px; }
     .test-add-group .group-name input {
       background: transparent;
       text-align: center;
