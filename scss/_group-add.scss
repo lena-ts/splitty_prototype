@@ -373,7 +373,7 @@
 			a {
 				color: black;
 				display: inline-block;
-				width: 49%;
+				width: 100%;
 				font-size: 1rem;
 				&.left {
 					float: left;
@@ -406,13 +406,13 @@
 			}
 			
 			.group-add__participants {
-				padding: 30px 20px 350px;
+				padding: 30px 20px 250px;
 				overflow: hidden;
 				
 				h4 {
 					padding-bottom: 20px;
 					text-align: center;
-// 					display: none;
+					display: none;
 				}
 				
 				.group-add__contacts {

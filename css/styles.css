@@ -607,7 +607,7 @@
     .test-add-group .footer-button a {
       color: black;
       display: inline-block;
-      width: 49%;
+      width: 100%;
       font-size: 1rem; }
       .test-add-group .footer-button a.left {
         float: left;
@@ -629,11 +629,12 @@
       box-shadow: 0 0 0 transparent !important;
       padding: 0; }
     .test-add-group .participants .group-add__participants {
-      padding: 30px 20px 350px;
+      padding: 30px 20px 250px;
       overflow: hidden; }
       .test-add-group .participants .group-add__participants h4 {
         padding-bottom: 20px;
-        text-align: center; }
+        text-align: center;
+        display: none; }
       .test-add-group .participants .group-add__participants .group-add__contacts {
         border: 0; }
       .test-add-group .participants .group-add__participants .group-list__item__participants__items__item {
