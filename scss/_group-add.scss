@@ -307,7 +307,7 @@
 		.group-add__color {
 			background: white;
 			position: absolute;
-			bottom: 100px;
+			bottom: 50px;
 			width: 100%;
 			text-align: center;
 			&-list {
@@ -340,6 +340,7 @@
 			bottom: 55px;
 			display: block;
 			text-align: center;
+			display: none;
 			>div {
 				display: inline-block;
 				svg {
@@ -355,6 +356,12 @@
 		.footer-button {
 			a {
 				color: black;
+				&.left {
+					float: left;
+				}
+				&.right {
+					float: right;
+				}
 			}
 			svg {
 				width: 20px;
