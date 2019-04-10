@@ -381,6 +381,7 @@
 				}
 				&.right {
 					float: right;
+					border-bottom: 2px solid $red;
 				}
 					>svg {
 						fill: black !important;
@@ -409,6 +410,7 @@
 				
 				h4 {
 					padding-bottom: 20px;
+					display: none;
 				}
 				
 				.group-add__contacts {
@@ -433,6 +435,10 @@
 							display: none;
 						}
 					}
+				}
+				
+				.group-add__contacts-item {
+					font-weight: 600;
 				}
 			}
 		}		
