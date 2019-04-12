@@ -141,3 +141,34 @@ a {
 	font-size: 1.2rem;
 	z-index: 1;
 }
+
+#test1 {
+	.test-add-group {
+		background: white !important;
+		.screen-header{
+			position: relative;
+			background: white;
+			color: black;
+			
+			.screen-header__navigation {
+				background: white;
+			}
+			svg {
+				fill: black;
+			}
+		}
+		
+		.group-name {
+			input {
+				color: black;
+				&::placeholder {
+					color: gray;
+				}
+			}
+		}	
+		
+		.group-add__color {
+			display: none;
+		}
+	}	
+}
