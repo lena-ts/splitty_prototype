@@ -146,7 +146,7 @@ a {
 	.test-add-group {
 		background: white !important;
 		.screen-header{
-			position: relative;
+// 			position: relative;
 			background: white;
 			color: black;
 			
@@ -156,6 +156,10 @@ a {
 			svg {
 				fill: black;
 			}
+		}
+		
+		.screen-body {
+			height: calc(100% - 300px);
 		}
 		
 		.group-name {

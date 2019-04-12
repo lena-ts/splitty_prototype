@@ -823,13 +823,14 @@ a {
 #test1 .test-add-group {
   background: white !important; }
   #test1 .test-add-group .screen-header {
-    position: relative;
     background: white;
     color: black; }
     #test1 .test-add-group .screen-header .screen-header__navigation {
       background: white; }
     #test1 .test-add-group .screen-header svg {
       fill: black; }
+  #test1 .test-add-group .screen-body {
+    height: calc(100% - 300px); }
   #test1 .test-add-group .group-name input {
     color: black; }
     #test1 .test-add-group .group-name input::placeholder {
