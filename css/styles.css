@@ -740,6 +740,43 @@
   .group-expenses-add .footer-button {
     position: absolute;
     bottom: 0; }
+  .group-expenses-add-single {
+    position: relative;
+    bottom: 0; }
+    .group-expenses-add-single .screen-header__navigation {
+      height: 100px; }
+      .group-expenses-add-single .screen-header__navigation .screen-header__title {
+        font-size: 0.9rem; }
+    .group-expenses-add-single .user-expense {
+      background: white;
+      margin-bottom: 20px;
+      color: black;
+      border-bottom: 1px solid #ebebeb; }
+      .group-expenses-add-single .user-expense .user-name {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 15px; }
+      .group-expenses-add-single .user-expense img {
+        max-width: 94px;
+        margin-top: -47px; }
+    .group-expenses-add-single .group-expenses-add__description {
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+      margin-top: 10px; }
+      .group-expenses-add-single .group-expenses-add__description-title {
+        border-bottom: 0; }
+        .group-expenses-add-single .group-expenses-add__description-title input {
+          font-weight: 300;
+          font-size: 22px; }
+      .group-expenses-add-single .group-expenses-add__description div {
+        line-height: 50px; }
+        .group-expenses-add-single .group-expenses-add__description div input {
+          text-align: center;
+          width: 96%; }
+          .group-expenses-add-single .group-expenses-add__description div input::placeholder {
+            color: #B0B1AE; }
+      .group-expenses-add-single .group-expenses-add__description-price input {
+        font-size: 35px;
+        font-weight: 600; }
 
 body {
   background: #fafafa;

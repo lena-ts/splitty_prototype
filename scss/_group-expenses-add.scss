@@ -118,4 +118,67 @@
 		position: absolute;
 		bottom: 0;
 	}
+	
+	&-single {
+		position: relative;
+		bottom: 0; 
+		
+		.screen-header__navigation {
+			height: 100px;
+			.screen-header__title {
+				font-size: 0.9rem;
+			}
+		}
+		
+		.user-expense {
+			background: white;
+			margin-bottom: 20px;
+			color: black;
+			border-bottom: 1px solid $border-color;
+			
+			.user-name {
+				font-weight: 600;
+				font-size: 20px;
+				margin-top: 15px;
+			}
+			
+			img {
+				max-width: 94px;
+				margin-top:-47px;
+			}
+		}
+		
+		.group-expenses-add {
+			&__description{
+				box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+				margin-top: 10px;
+				
+				&-title {
+					border-bottom: 0;
+					input {
+						font-weight: 300;
+						font-size:22px;
+					}
+				}
+				
+				div {
+					line-height: 50px;
+					input {
+						text-align: center;
+						width: 96%;
+						&::placeholder {
+							color: #B0B1AE;
+						}
+					}
+				}
+				
+				&-price {
+					input {
+						font-size: 35px;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
 }
