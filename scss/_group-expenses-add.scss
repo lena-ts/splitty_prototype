@@ -198,11 +198,11 @@
 			&.scrolled {
 				.screen-header__navigation {
 					height: 80px;
-					height: 50px;
+// 					height: 50px;
 					
 					.usr-name {
 						display: inline-block;
-// 						display: none;
+						display: none; 
 					}
 				}
 			
@@ -219,7 +219,7 @@
 					top: 40px;
 					color: white;
 					padding: 0;
-					display: none;
+// 					display: none;
 				}
 				
 				.group-expenses-add {
