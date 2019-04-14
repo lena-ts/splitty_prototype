@@ -803,6 +803,9 @@
       .group-expenses-add-single .screen-header.scrolled .group-expenses-add__description {
         margin-top: -15px;
         margin-bottom: 0; }
+        .group-expenses-add-single .screen-header.scrolled .group-expenses-add__description div {
+          display: inline-block;
+          width: 45%; }
     .group-expenses-add-single .screen-body {
       position: relative;
       margin-top: 360px; }
