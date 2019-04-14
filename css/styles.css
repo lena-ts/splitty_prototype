@@ -814,8 +814,9 @@
         padding: 0;
         display: none; }
       .group-expenses-add-single .screen-header.scrolled .group-expenses-add__description {
-        margin-top: -15px;
-        margin-bottom: 0; }
+        margin-top: -20px;
+        margin-bottom: 0;
+        padding-bottom: 5px; }
         .group-expenses-add-single .screen-header.scrolled .group-expenses-add__description div {
           display: inline-block;
           width: 45%; }
