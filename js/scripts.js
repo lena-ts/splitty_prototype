@@ -250,5 +250,14 @@ $(document).ready(function(){
 				$('.group-expenses-add-single .screen-header').removeClass('scrolled');
 			}
 		});
+		
+/*
+		var val = $('.group-expenses-add__description-price input').val();
+		
+		$('.group-expenses-add__description-price input').on('keyup', function(){
+			console.log(val);
+			val = '$' + $(this).val();
+		});
+*/
 	}
 });

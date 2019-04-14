@@ -35,6 +35,11 @@ $light-yellow: rgba(247, 206, 62, $color-opacity);
   -ms-box-shadow: $property;
   box-shadow: $property; 
 }
+@mixin border-radius($property) {
+  -webkit-border-radius: $property;
+  -ms-border-radius: $property;
+  border-radius: $property; 
+}
 
 @import '_nav-elements';
 @import '_group';

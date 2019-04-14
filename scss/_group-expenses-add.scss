@@ -102,10 +102,14 @@
 			&-amount {
 				display: inline-block;
 				float: right;
+				width: 60px;
 				input {
 					text-align: right;
 					font-weight: 500;
 					font-size: 20px;
+					border: 0;
+					width: 100%;
+// 					padding-right: 5px;
 				}
 			}
 			&:last-child {
@@ -115,7 +119,7 @@
 	}
 
 	.footer-button {
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 	}
 	
@@ -240,6 +244,7 @@
 		.screen-body {
 			position: relative;
 			margin-top:370px;
+			padding-bottom: 20px;
 		}
 				
 	}

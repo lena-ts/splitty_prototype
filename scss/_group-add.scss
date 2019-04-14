@@ -139,16 +139,13 @@
 			transition: 0.3s;
 			cursor: pointer;
 			.check-label{
-				width: 15px;
-				height: 15px;
+				width: 58px;
+				height: 58px;
 				border-radius: 100%;				
 				position: absolute;
-				top:-4px;
-				right: -4px;
-				display: none;
-				background: #5CAC4C;
-// 				border: 1px solid #585757;
-				
+				top: -2px;
+				left: -2px;		
+				display: none;	
 				svg {
 					width: 7px;
 					height: 7px;
@@ -156,6 +153,16 @@
 					display: none;
 				}
 				
+				&:before {
+					content: " ";
+					display: block;
+					width: 58px;
+					height: 58px;
+					border: 1px solid #5CAC4C;
+					@include border-radius(100%);
+				}
+				
+/*
 				&:before {
 					content: " ";
 					display: block;
@@ -170,6 +177,7 @@
 						margin-top: -4px;
 						margin-left: -4px;		
 				}
+*/
 			}
 			
 			&.checked {
@@ -177,6 +185,7 @@
 				.check-label {
 					display: block;
 				}
+			
 			}
 		}
 		
