@@ -18,6 +18,23 @@ $light-blue: rgba(72, 111, 251, $color-opacity);
 $yellow: rgba(247, 206, 62, 1);
 $light-yellow: rgba(247, 206, 62, $color-opacity);
 
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  transition: $property;
+}
+
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -ms-box-shadow: $property;
+  box-shadow: $property; 
+}
 
 @import '_nav-elements';
 @import '_group';

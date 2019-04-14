@@ -139,12 +139,14 @@
 			.user-name {
 				font-weight: 600;
 				font-size: 20px;
-				margin-top: 15px;
+				padding-top: 15px;
+				@include transition(0.2s);
 			}
 			
 			img {
 				max-width: 94px;
 				margin-top:-47px;
+				@include transition(0.2s);  
 			}
 		}
 		
@@ -152,17 +154,18 @@
 			&__description{
 				box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
 				margin-top: 10px;
+				@include transition(0.2s);
 				
 				&-title {
 					border-bottom: 0;
 					input {
-						font-weight: 300;
+						font-weight: 400;
 						font-size:22px;
 					}
 				}
 				
 				div {
-					line-height: 50px;
+					line-height: 45px;
 					input {
 						text-align: center;
 						width: 96%;
@@ -180,5 +183,40 @@
 				}
 			}
 		}
+		
+		.screen-header {
+			position: fixed;
+			top:0;
+			z-index: 10;
+			
+			&.scrolled {
+				.user-expense {
+					img {
+						max-width: 0;
+						@include transform(scale(0.0)); 
+					}
+				}
+				
+				.user-name {
+					position: absolute;
+					width: 100%;
+					top: 40px;
+					color: white;
+				}
+				
+				.group-expenses-add {
+					&__description {
+						margin-top:-15px;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		
+		.screen-body {
+			position: relative;
+			margin-top:360px;
+		}
+				
 	}
 }

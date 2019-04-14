@@ -755,20 +755,29 @@
       .group-expenses-add-single .user-expense .user-name {
         font-weight: 600;
         font-size: 20px;
-        margin-top: 15px; }
+        padding-top: 15px;
+        -webkit-transition: 0.2s;
+        -ms-transition: 0.2s;
+        transition: 0.2s; }
       .group-expenses-add-single .user-expense img {
         max-width: 94px;
-        margin-top: -47px; }
+        margin-top: -47px;
+        -webkit-transition: 0.2s;
+        -ms-transition: 0.2s;
+        transition: 0.2s; }
     .group-expenses-add-single .group-expenses-add__description {
       box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
-      margin-top: 10px; }
+      margin-top: 10px;
+      -webkit-transition: 0.2s;
+      -ms-transition: 0.2s;
+      transition: 0.2s; }
       .group-expenses-add-single .group-expenses-add__description-title {
         border-bottom: 0; }
         .group-expenses-add-single .group-expenses-add__description-title input {
-          font-weight: 300;
+          font-weight: 400;
           font-size: 22px; }
       .group-expenses-add-single .group-expenses-add__description div {
-        line-height: 50px; }
+        line-height: 45px; }
         .group-expenses-add-single .group-expenses-add__description div input {
           text-align: center;
           width: 96%; }
@@ -777,6 +786,26 @@
       .group-expenses-add-single .group-expenses-add__description-price input {
         font-size: 35px;
         font-weight: 600; }
+    .group-expenses-add-single .screen-header {
+      position: fixed;
+      top: 0;
+      z-index: 10; }
+      .group-expenses-add-single .screen-header.scrolled .user-expense img {
+        max-width: 0;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0); }
+      .group-expenses-add-single .screen-header.scrolled .user-name {
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        color: white; }
+      .group-expenses-add-single .screen-header.scrolled .group-expenses-add__description {
+        margin-top: -15px;
+        margin-bottom: 0; }
+    .group-expenses-add-single .screen-body {
+      position: relative;
+      margin-top: 360px; }
 
 body {
   background: #fafafa;

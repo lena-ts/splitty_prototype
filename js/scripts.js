@@ -16,6 +16,7 @@ $(document).ready(function(){
 	addExpense__values();
 	addExpense__finish(); 
 	addParticipants();
+	addExpense_test();
 	
 	function indicatorWidth(){	
 		var arr = [],
@@ -237,6 +238,17 @@ $(document).ready(function(){
 		    $('#group-add').animate({
 		        scrollTop: $("#group-color").offset().top
 		    }, 1000);
+		});
+	}
+	
+	function addExpense_test() {
+		$(window).scroll(function(){
+			if ($(window).scrollTop()>=100) {
+				$('.group-expenses-add-single .screen-header').addClass('scrolled');
+			}
+			else {
+				$('.group-expenses-add-single .screen-header').removeClass('scrolled');
+			}
 		});
 	}
 });
