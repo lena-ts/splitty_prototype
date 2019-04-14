@@ -125,8 +125,14 @@
 		
 		.screen-header__navigation {
 			height: 100px;
+			@include transition(0.2s);
 			.screen-header__title {
 				font-size: 0.9rem;
+			}
+			
+			.usr-name {
+				display: none;
+				font-weight: 600;
 			}
 		}
 		
@@ -190,6 +196,15 @@
 			z-index: 10;
 			
 			&.scrolled {
+				.screen-header__navigation {
+					height: 80px;
+					height: 50px;
+					
+					.usr-name {
+						display: inline-block;
+					}
+				}
+			
 				.user-expense {
 					img {
 						max-width: 0;
@@ -202,6 +217,8 @@
 					width: 100%;
 					top: 40px;
 					color: white;
+					padding: 0;
+					display: none;
 				}
 				
 				.group-expenses-add {
