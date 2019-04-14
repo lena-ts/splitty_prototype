@@ -787,7 +787,8 @@
         padding-top: 15px;
         -webkit-transition: 0.2s;
         -ms-transition: 0.2s;
-        transition: 0.2s; }
+        transition: 0.2s;
+        padding-bottom: 0; }
       .group-expenses-add-single .user-expense img {
         max-width: 94px;
         margin-top: -47px;
