@@ -251,6 +251,11 @@ $(document).ready(function(){
 			}
 		});
 		
+		$('.edit-sums').click(function(){
+			$('.edit-block').slideToggle();
+			$(this).toggleClass('show');
+		});
+		
 /*
 		var val = $('.group-expenses-add__description-price input').val();
 		

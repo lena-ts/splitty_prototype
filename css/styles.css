@@ -723,12 +723,21 @@
     margin-top: 10px;
     border-top: 1px solid #ebebeb;
     font-weight: 500;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
     .group-expenses-add .edit-sums svg {
-      width: 13px;
+      width: 11px;
+      height: 11px;
       margin-right: 5px; }
+    .group-expenses-add .edit-sums .done {
+      display: none; }
+    .group-expenses-add .edit-sums.show .done {
+      display: block; }
+    .group-expenses-add .edit-sums.show .edit {
+      display: none; }
   .group-expenses-add .edit-block {
-    margin-top: 20px; }
+    margin-top: 20px;
+    display: none; }
     .group-expenses-add .edit-block__user {
       border-bottom: 1px solid #ebebeb;
       padding: 10px 0; }
@@ -799,7 +808,8 @@
           font-weight: 400;
           font-size: 22px; }
       .group-expenses-add-single .group-expenses-add__description div {
-        line-height: 45px; }
+        line-height: 45px;
+        vertical-align: middle; }
         .group-expenses-add-single .group-expenses-add__description div input {
           text-align: center;
           width: 100%;
@@ -832,7 +842,7 @@
       .group-expenses-add-single .screen-header.scrolled .group-expenses-add__description {
         margin-top: -20px;
         margin-bottom: 0;
-        padding-bottom: 5px; }
+        padding-bottom: 3px; }
         .group-expenses-add-single .screen-header.scrolled .group-expenses-add__description div {
           display: inline-block;
           width: 45%; }

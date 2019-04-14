@@ -79,14 +79,28 @@
 	    border-top: 1px solid #ebebeb;
 	    font-weight: 500;		
 	    text-align: center;    
+	    cursor: pointer;
 	    svg {
-		    width: 13px;
+		    width: 11px;
+		    height: 11px;
 		    margin-right: 5px;
-	    }		
+	    }	
+	    .done {
+		    display: none;
+	    }
+	    &.show {
+			.done {
+				display: block;
+			}
+			.edit {
+				display: none;
+			}
+		}	
 	}
 	
 	.edit-block {
 		margin-top:20px;
+		display: none;
 		&__user {
 			border-bottom: 1px solid $border-color;
 			padding: 10px 0;
@@ -178,6 +192,7 @@
 				
 				div {
 					line-height: 45px;
+					vertical-align: middle;
 					input {
 						text-align: center;
 						width: 100%;
@@ -233,7 +248,7 @@
 					&__description {
 						margin-top:-20px;
 						margin-bottom: 0;
-						padding-bottom: 5px;
+						padding-bottom: 3px;
 						
 						div {
 							display: inline-block;
