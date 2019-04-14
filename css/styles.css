@@ -790,7 +790,9 @@
       margin-top: 10px;
       -webkit-transition: 0.2s;
       -ms-transition: 0.2s;
-      transition: 0.2s; }
+      transition: 0.2s;
+      margin-left: 0;
+      margin-right: 0; }
       .group-expenses-add-single .group-expenses-add__description-title {
         border-bottom: 0; }
         .group-expenses-add-single .group-expenses-add__description-title input {
@@ -800,7 +802,8 @@
         line-height: 45px; }
         .group-expenses-add-single .group-expenses-add__description div input {
           text-align: center;
-          width: 96%; }
+          width: 100%;
+          margin: 0; }
           .group-expenses-add-single .group-expenses-add__description div input::placeholder {
             color: #B0B1AE; }
       .group-expenses-add-single .group-expenses-add__description-price input {

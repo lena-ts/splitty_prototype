@@ -165,6 +165,8 @@
 				box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
 				margin-top: 10px;
 				@include transition(0.2s);
+				margin-left: 0;
+				margin-right: 0;
 				
 				&-title {
 					border-bottom: 0;
@@ -178,7 +180,8 @@
 					line-height: 45px;
 					input {
 						text-align: center;
-						width: 96%;
+						width: 100%;
+						margin: 0;
 						&::placeholder {
 							color: #B0B1AE;
 						}
