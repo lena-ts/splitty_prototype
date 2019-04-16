@@ -783,7 +783,7 @@
       border-bottom: 1px solid #ebebeb; }
       .group-expenses-add-single .user-expense .user-name {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 18px;
         padding-top: 15px;
         -webkit-transition: 0.2s;
         -ms-transition: 0.2s;
@@ -853,7 +853,7 @@
         font-size: 28px !important; }
     .group-expenses-add-single .screen-body {
       position: relative;
-      margin-top: 340px;
+      margin-top: 370px;
       padding-bottom: 20px; }
 
 body {
