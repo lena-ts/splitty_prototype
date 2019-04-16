@@ -139,12 +139,12 @@
 			transition: 0.3s;
 			cursor: pointer;
 			.check-label{
-				width: 58px;
-				height: 58px;
+				width: 60px;
+				height: 60px;
 				border-radius: 100%;				
 				position: absolute;
-				top: -2px;
-				left: -2px;		
+				top: -3px;
+				left: -3px;		
 				display: none;	
 				svg {
 					width: 7px;
@@ -156,8 +156,8 @@
 				&:before {
 					content: " ";
 					display: block;
-					width: 58px;
-					height: 58px;
+					width: 60px;
+					height: 60px;
 					border: 1px solid #5CAC4C;
 					@include border-radius(100%);
 				}

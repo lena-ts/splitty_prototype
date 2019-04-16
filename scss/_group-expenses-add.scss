@@ -162,7 +162,7 @@
 			
 			.user-name {
 				font-weight: 600;
-				font-size: 20px;
+				font-size: 16px;
 				padding-top: 15px;
 				@include transition(0.2s);
 				padding-bottom: 0;
@@ -253,7 +253,16 @@
 						
 						div {
 							display: inline-block;
-							width: 45%;
+							width: 48%;
+							
+							input {
+								font-size: 18px;
+							}
+						}
+					}
+					&__description-price {
+						input {
+							font-size: 28px !important;
 						}
 					}
 				}
@@ -262,7 +271,7 @@
 		
 		.screen-body {
 			position: relative;
-			margin-top:370px;
+			margin-top:340px;
 			padding-bottom: 20px;
 		}
 				
