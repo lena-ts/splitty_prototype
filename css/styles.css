@@ -878,11 +878,14 @@
       font-size: 12px; }
 
 .index-participants .group-body {
-  padding: 0 15px;
-  margin-top: 10px; }
+  padding: 0;
+  margin-top: 0px; }
   .index-participants .group-body .user-me {
     text-align: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    background: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebebeb; }
     .index-participants .group-body .user-me input {
       margin-top: 20px;
       text-align: center;
@@ -893,7 +896,7 @@
       outline: none !important; }
   .index-participants .group-body .group-add__participants {
     margin-top: 30px;
-    padding: 0; }
+    padding: 0 15px; }
     .index-participants .group-body .group-add__participants h4 {
       text-transform: uppercase;
       padding: 0;
