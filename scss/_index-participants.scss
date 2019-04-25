@@ -1,0 +1,58 @@
+.index-participants {
+	.group-header{
+		line-height: 40px;
+		&__navigation{
+			display: flex;
+			justify-content: space-between;
+			background: white;
+			border-bottom: 1px solid #ebebeb;
+			padding: 0 15px;
+			svg {
+				fill: black;
+			}
+			
+			.group-header__edit{
+				font-size: 12px;
+			}
+		}
+	}
+	
+	.group-body {
+		padding: 0 15px;
+		margin-top:10px;
+		
+		.user-me {
+			text-align: center;
+			padding-top:20px;
+			input {
+				margin-top: 20px;
+				text-align: center;
+				font-size: 1.2rem;
+				font-weight: 500;
+				background: transparent;
+				border: 0;
+				outline: none !important;
+			}
+		}
+		
+		.group-add__participants {
+			margin-top: 30px;
+			padding: 0;
+			
+			h4 {
+				text-transform: uppercase;
+			    padding: 0;
+			    font-size: 0.7rem;						
+			}
+			
+			.box {
+				padding: 10px 15px 0;
+			}
+			
+			.group-add__contacts {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}

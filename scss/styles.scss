@@ -46,6 +46,7 @@ $light-yellow: rgba(247, 206, 62, $color-opacity);
 @import '_group-item';
 @import '_group-add';
 @import '_group-expenses-add';
+@import '_index-participants';
 
 body {
 	background: $bg-color;

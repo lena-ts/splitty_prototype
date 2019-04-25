@@ -99,6 +99,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 15px; }
 
+.index-participnats-link {
+  display: inline-block;
+  float: right; }
+  .index-participnats-link svg {
+    width: 24px; }
+
 #group-item-overlay {
   background: white;
   position: fixed;
@@ -857,6 +863,46 @@
       position: relative;
       margin-top: 370px;
       padding-bottom: 20px; }
+
+.index-participants .group-header {
+  line-height: 40px; }
+  .index-participants .group-header__navigation {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 15px; }
+    .index-participants .group-header__navigation svg {
+      fill: black; }
+    .index-participants .group-header__navigation .group-header__edit {
+      font-size: 12px; }
+
+.index-participants .group-body {
+  padding: 0 15px;
+  margin-top: 10px; }
+  .index-participants .group-body .user-me {
+    text-align: center;
+    padding-top: 20px; }
+    .index-participants .group-body .user-me input {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 500;
+      background: transparent;
+      border: 0;
+      outline: none !important; }
+  .index-participants .group-body .group-add__participants {
+    margin-top: 30px;
+    padding: 0; }
+    .index-participants .group-body .group-add__participants h4 {
+      text-transform: uppercase;
+      padding: 0;
+      font-size: 0.7rem; }
+    .index-participants .group-body .group-add__participants .box {
+      padding: 10px 15px 0; }
+    .index-participants .group-body .group-add__participants .group-add__contacts {
+      margin: 0;
+      padding: 0; }
 
 body {
   background: #fafafa;

@@ -18,6 +18,7 @@ $(document).ready(function(){
 	addParticipants();
 	addExpense_test();
 	closeExpense();
+	openIndexParticipants();
 	
 	function indicatorWidth(){	
 		var arr = [],
@@ -278,5 +279,14 @@ $(document).ready(function(){
 		$('#group-expenses-add .js-back-button').click(function(){
 			location.href = "index.html";
 		});
+	}
+	
+	function openIndexParticipants(){
+		$('.index-participants .js-back-button').click(function(){
+			location.href = "index.html";
+		});
+		$('.index-participants .group-header__edit').click(function(){
+			location.href = "index.html";
+		});		
 	}
 });
