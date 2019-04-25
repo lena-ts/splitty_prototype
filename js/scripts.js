@@ -17,6 +17,7 @@ $(document).ready(function(){
 	addExpense__finish(); 
 	addParticipants();
 	addExpense_test();
+	closeExpense();
 	
 	function indicatorWidth(){	
 		var arr = [],
@@ -199,6 +200,7 @@ $(document).ready(function(){
 	}
 	
 	
+/*
 	function addExpense() {
 		$('.group-footer__items .group-list__item__participants__items__item').click(function(){
 			$('.group-expenses-add').addClass('visible');
@@ -209,6 +211,12 @@ $(document).ready(function(){
 			$('.group-expenses-add').attr('data-color', groupColor);
 			$('.group-expenses-add .user-name').html(userContent);		
 			
+		});
+	}
+*/
+	function addExpense() {
+		$('.group-footer__items .group-list__item__participants__items__item').click(function(){
+			location.href = "add-expense.html";
 		});
 	}
 	
@@ -264,5 +272,11 @@ $(document).ready(function(){
 			val = '$' + $(this).val();
 		});
 */
+	}
+	
+	function closeExpense(){
+		$('#group-expenses-add .js-back-button').click(function(){
+			location.href = "index.html";
+		});
 	}
 });
