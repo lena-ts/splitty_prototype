@@ -101,7 +101,8 @@
 
 .index-participnats-link {
   display: inline-block;
-  float: right; }
+  float: right;
+  display: none; }
   .index-participnats-link svg {
     width: 24px; }
 
