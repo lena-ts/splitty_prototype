@@ -308,18 +308,24 @@
       font-size: 1.2rem;
       font-size: 1rem;
       font-size: 0.9rem;
-      display: flex;
+      display: inline-block;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      width: calc(100% - 45px);
+      text-align: center; }
     .group-expenses__item__price {
       font-size: 1rem;
-      font-weight: 600; }
+      font-weight: 600;
+      display: inline-block; }
     .group-expenses__item__by {
       color: gray;
       color: black;
       font-size: 0.8rem;
       font-size: 1rem;
-      font-weight: 600; }
+      font-weight: 600;
+      display: inline-block;
+      float: left;
+      width: 40px; }
     .group-expenses__item.inactive {
       display: none; }
   .group-expenses h4 {

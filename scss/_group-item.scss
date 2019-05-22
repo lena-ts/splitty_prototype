@@ -79,15 +79,18 @@
 			font-size: 1.2rem;
 			font-size: 1rem;
 			font-size: 0.9rem;
-		    display: flex;
+		    display: inline-block;
 		    align-items: center;
 		    justify-content: space-between;	
+		    width: calc(100% - 45px);
+		    text-align: center;
 // 		    font-weight: 600;	
 	    }
 	    
 	    &__price {
 		    font-size: 1rem;
 		    font-weight: 600;
+		    display: inline-block;
 	    }
 	    
 	    &__by {
@@ -96,6 +99,9 @@
 		    font-size: 0.8rem;
 		    font-size: 1rem;
 		    font-weight: 600;
+		    display: inline-block;
+		    float: left;
+		    width: 40px;
 	    }
 	    
 	    &.inactive {
