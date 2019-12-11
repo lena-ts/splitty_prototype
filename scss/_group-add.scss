@@ -14,7 +14,7 @@
 	}
 	
 	.screen-header__title {
-// 		display: none;
+		font-weight: 600;
 	}
 	
 	.group-name {
@@ -31,6 +31,8 @@
 			background: transparent;	
 			color: black;	
 			outline: none !important;
+			font-weight: 600;
+			font-size: 22px;
 			&::placeholder {
 // 				color: black;
 // 				color: rgba(255,255,255, 1);
@@ -79,7 +81,7 @@
 				width: 35px;
 				height: 35px;
 				margin: 0 10px 0 0;
-				box-shadow: $list-item-box-shadow;
+// 				box-shadow: $list-item-box-shadow;
 				cursor: pointer;
 				vertical-align: middle;
 				-webkit-transition: 0.3s;
@@ -87,34 +89,38 @@
 				
 				
 				&.red {
-					background: linear-gradient(to bottom, $red, $light-red);
+					background: $red;
+// 					background: linear-gradient(to bottom, $red, $light-red);
 				}
 				&.blue {
-					background: linear-gradient(to bottom, $blue, $light-blue);
+					background: $blue;
+// 					background: linear-gradient(to bottom, $blue, $light-blue);
 				}
 				&.green {
-					background: linear-gradient(to bottom, $green, $light-green);
+					background: $green;
+// 					background: linear-gradient(to bottom, $green, $light-green);
 				}	
 				&.yellow {
-					background: linear-gradient(to bottom, $yellow, $light-yellow);
+					background: $yellow;
+// 					background: linear-gradient(to bottom, $yellow, $light-yellow);
 				}											
 				
 				&.active {
 // 					border: 3px solid white;
-					width: 40px;
-					height: 40px;
+					width: 35px;
+					height: 35px;
 					margin: 0 10px 0 0;
 					position: relative;
 					
 					&:after {
 						content: " ";
 						position: absolute;
-						top:-5px;
-						left: -5px;
-						width: 50px;
-						height: 50px;
+						top:-3px;
+						left: -3px;
+						width: 41px;
+						height: 41px;
 						background: transparent;
-						border: 1px solid #585757; 
+						border: 1px solid #5CAC4C; 
 						border-radius: 100%;
 					}
 				}
@@ -254,6 +260,33 @@
 				fill: $yellow;
 			}
 		}						
+	}
+	
+	&.screen{
+	    -webkit-transition: 0.3s;
+	    transition: 0.3s;	
+		background: $bg-color;
+		
+			&[data-color="red"] { 
+				.screen-header{
+					background:  linear-gradient(to bottom, $red, $light-red);
+				}
+			}
+			&[data-color="blue"] { 
+				.screen-header{
+				background:  linear-gradient(to bottom, $blue, $light-blue);
+				}
+			}
+			&[data-color="green"] { 
+				.screen-header{
+				background:  linear-gradient(to bottom, $green, $light-green);
+				}
+			}
+			&[data-color="yellow"] { 
+				.screen-header{
+				background:  linear-gradient(to bottom, $yellow, $light-yellow);
+				}
+			}									
 	}
 }
 

@@ -170,7 +170,7 @@
         line-height: 3rem;
         margin: 0 1rem;
         cursor: pointer;
-        font-weight: 600; }
+        font-weight: 500; }
         .group-item .group-header__tabs__tab.active {
           color: #000; }
   .group-item .group-footer {
@@ -275,14 +275,14 @@
   .group-person__item__title__name {
     display: inline-block;
     font-weight: 600;
-    font-size: 1.3rem; }
+    font-size: 1.1rem; }
     .group-person__item__title__name img {
       max-width: 35px;
       margin-right: 5px; }
   .group-person__item__title__price {
     display: inline-block;
     font-weight: 600;
-    font-size: 1.3rem; }
+    font-size: 1.1rem; }
 
 .group-person__item__owes {
   margin-top: 10px;
@@ -293,7 +293,7 @@
     color: gray;
     font-size: 0.7rem; }
   .group-person__item__owes .group-list__item__participants__items__item div {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 600; }
 
 .group-expenses {
@@ -361,6 +361,8 @@
   transition: 0.4s; }
   .group-add.visible {
     bottom: 0; }
+  .group-add .screen-header__title {
+    font-weight: 600; }
   .group-add .group-name {
     padding-bottom: 0px;
     font-size: 1rem;
@@ -374,7 +376,9 @@
       border: transparent;
       background: transparent;
       color: black;
-      outline: none !important; }
+      outline: none !important;
+      font-weight: 600;
+      font-size: 22px; }
   .group-add h4 {
     text-transform: uppercase;
     font-size: 0.7rem; }
@@ -410,33 +414,32 @@
         width: 35px;
         height: 35px;
         margin: 0 10px 0 0;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         cursor: pointer;
         vertical-align: middle;
         -webkit-transition: 0.3s;
         transition: 0.3s; }
         .group-add__color-list li.red {
-          background: linear-gradient(to bottom, #fb4873, rgba(251, 72, 115, 0.7)); }
+          background: #fb4873; }
         .group-add__color-list li.blue {
-          background: linear-gradient(to bottom, #486ffb, rgba(72, 111, 251, 0.7)); }
+          background: #486ffb; }
         .group-add__color-list li.green {
-          background: linear-gradient(to bottom, #4cba8c, rgba(76, 186, 140, 0.7)); }
+          background: #4cba8c; }
         .group-add__color-list li.yellow {
-          background: linear-gradient(to bottom, #f7ce3e, rgba(247, 206, 62, 0.7)); }
+          background: #f7ce3e; }
         .group-add__color-list li.active {
-          width: 40px;
-          height: 40px;
+          width: 35px;
+          height: 35px;
           margin: 0 10px 0 0;
           position: relative; }
           .group-add__color-list li.active:after {
             content: " ";
             position: absolute;
-            top: -5px;
-            left: -5px;
-            width: 50px;
-            height: 50px;
+            top: -3px;
+            left: -3px;
+            width: 41px;
+            height: 41px;
             background: transparent;
-            border: 1px solid #585757;
+            border: 1px solid #5CAC4C;
             border-radius: 100%; }
   .group-add__participants {
     padding: 0 15px;
@@ -539,6 +542,18 @@
       fill: #4cba8c; }
     .group-add .footer-button[data-color="yellow"] svg {
       fill: #f7ce3e; }
+  .group-add.screen {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: #fafafa; }
+    .group-add.screen[data-color="red"] .screen-header {
+      background: linear-gradient(to bottom, #fb4873, rgba(251, 72, 115, 0.7)); }
+    .group-add.screen[data-color="blue"] .screen-header {
+      background: linear-gradient(to bottom, #486ffb, rgba(72, 111, 251, 0.7)); }
+    .group-add.screen[data-color="green"] .screen-header {
+      background: linear-gradient(to bottom, #4cba8c, rgba(76, 186, 140, 0.7)); }
+    .group-add.screen[data-color="yellow"] .screen-header {
+      background: linear-gradient(to bottom, #f7ce3e, rgba(247, 206, 62, 0.7)); }
 
 .test-add-group {
   -webkit-transition: 0.3s;
@@ -953,14 +968,14 @@ a {
     .group-list__item:nth-child(5) .indicator {
       background: #4CBA8C; }
     .group-list__item__title {
-      font-size: 1.5rem; }
+      font-size: 1.3rem; }
       .group-list__item__title__name {
         display: inline-block;
-        font-weight: 600; }
+        font-weight: 500; }
       .group-list__item__title__price {
         display: inline-block;
         float: right;
-        font-weight: 600; }
+        font-weight: 500; }
     .group-list__item__participants {
       margin-top: 0.5rem; }
       .group-list__item__participants__title {
@@ -982,7 +997,7 @@ a {
             font-size: 0.8rem;
             color: gray; }
           .group-list__item__participants__items__item > div {
-            font-weight: 600; }
+            font-weight: 500; }
 
 .footer-button {
   display: block;

@@ -69,7 +69,7 @@ $primary-color: royalblue;
 */
 		&[data-color="red"] { 
 			.screen-header__navigation {
-			background:  linear-gradient(to bottom, $red, $light-red);
+				background:  linear-gradient(to bottom, $red, $light-red);
 			}
 		}
 		&[data-color="blue"] { 
